@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".ui.activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/layout_design">
+
+
+            <EditText
+                android:id="@+id/enter_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="@color/white"
+                android:background="@drawable/edit_text_design"
+                android:layout_marginLeft="50dp"
+                android:paddingStart="5dp"
+                android:layout_marginRight="50dp"
+                android:hint="@string/user_name"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/enter_password"
+                android:layout_below="@id/enter_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/edit_text_design"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="@string/password"
+                android:drawableStart="@drawable/ic_lock_open_white_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:text="@string/login"
+                android:layout_below="@id/enter_password"
+                android:background="@drawable/edit_text_design"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="50dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.08"
+                android:background="@drawable/big_logo"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
