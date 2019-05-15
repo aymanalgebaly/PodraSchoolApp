@@ -16,4 +16,9 @@
     <string name="education">Education</string>
     <string name="openbook">OpenBook</string>
     <string name="checklist">CheckList</string>
+    <string name="home_work">Home Work</string>
+    <string name="attendance">Attendance</string>
+    <string name="schedule">Schedule</string>
+    <string name="exams">Exams</string>
+    <string name="library">Library</string>
 </resources>
