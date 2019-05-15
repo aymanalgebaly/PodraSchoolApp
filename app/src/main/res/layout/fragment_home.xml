@@ -1,11 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:background="@color/azra2"
     tools:context=".ui.fragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/openbook_background_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:id="@+id/openbook_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/open_book"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/openbook"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/openbook_background_img"
+                android:gravity="center_horizontal"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_below="@id/openbook_background_img"
+            android:id="@+id/education_background_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:layout_below="@id/openbook_background_img"
+            android:id="@+id/education_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/green"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/education"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/education"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/education_background_img"
+                android:gravity="center_horizontal"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_below="@id/education_background_img"
+            android:id="@+id/ckecklist_background_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageView
+                android:id="@+id/ckecklist_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_img"
+                android:layout_alignEnd="@+id/openbook_background_img"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/checklist"
+                android:backgroundTint="@color/orange" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checklist"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/ckecklist_background_img"
+                android:gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/calendar_background_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageView
+                android:id="@+id/calendar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:backgroundTint="@color/soft_blue"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/calendar"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calendar"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/calendar_background_img"
+                android:gravity="center_horizontal"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@id/calendar_background_img"
+                android:id="@+id/placeholder_background_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageView
+                android:layout_below="@id/calendar_img"
+                android:id="@+id/placeholder_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:backgroundTint="@color/red"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/placeholder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/placeholder_background_img"
+                android:gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

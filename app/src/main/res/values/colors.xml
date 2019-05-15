@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#ffffff</color>
-    <color name="colorPrimaryDark">#607D8B</color>
+    <color name="colorPrimaryDark">#1A237E</color>
     <color name="colorAccent">#D81B60</color>
     <color name="white">#ffffff</color>
     <color name="red">#fc3e39</color>
     <color name="moov">#7950ce</color>
+    <color name="soft_moov">#BA68C8</color>
+    <color name="dark_moov">#AB47BC</color>
     <color name="blue">#0871f1</color>
+    <color name="soft_blue">#4FC3F7</color>
+    <color name="dark_blue_new">#2979FF</color>
+    <color name="darker_blue_new">#2962FF</color>
+    <color name="blue_orignal">#448AFF</color>
     <color name="yellow">#ffb903</color>
     <color name="gray">#f1f1f3</color>
     <color name="soft_gray">#fafafa</color>
@@ -16,4 +22,7 @@
     <color name="green">#b7e927</color>
     <color name="dark_blue">#78909C</color>
     <color name="dark_red">#ac0302</color>
+    <color name="off_white">#ece8d9</color>
+    <color name="orange">#f8b500</color>
+    <color name="azra2">#283593</color>
 </resources>
