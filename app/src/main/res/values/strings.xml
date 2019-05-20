@@ -21,4 +21,6 @@
     <string name="schedule">Schedule</string>
     <string name="exams">Exams</string>
     <string name="library">Library</string>
+    <string name="absence">Absence</string>
+    <string name="_50">50%</string>
 </resources>
