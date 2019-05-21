@@ -59,14 +59,15 @@ public class WednesdayFragment extends Fragment {
     private void fetchData (){
         List<ScheduleModel> scheduleModels = new ArrayList<>();
 
-        String [] numOfClass = {"FIRST CLASS","FIRST CLASS","FIRST CLASS","FIRST CLASS","FIRST CLASS"};
-        String [] nameOfClass = {"ARABIC","ARABIC","ARABIC","ARABIC","ARABIC"};
+        String [] numOfClass = {"First Class","First Class","First Class","First Class","First Class"};
+        String [] nameOfClass = {"Arabic","Arabic","Arabic","Arabic","Arabic"};
         String [] from = {"08:00","08:00","08:00","08:00","08:00"};
         String [] to = {"09:00","09:00","09:00","09:00","09:00"};
 
-        int [] classIMg = {R.drawable.teacher_new,R.drawable.teacher_new,R.drawable.teacher_new,R.drawable.teacher_new,R.drawable.teacher_new};
-        int [] book = {R.drawable.open_book_new,R.drawable.open_book_new,R.drawable.open_book_new,R.drawable.open_book_new,R.drawable.open_book_new};
-
+        int [] classIMg = {R.drawable.teachers,R.drawable.teachers,R.drawable.teachers,R.drawable.teachers,R.drawable.teachers};
+        int [] book = {R.drawable.open_book_final,R.drawable.open_book_final,R.drawable.open_book_final,
+                R.drawable.open_book_final,R.drawable.open_book_final};
+        
         for (int i = 0; i <numOfClass.length ; i++) {
             scheduleModels.add(new ScheduleModel(classIMg[i],book[i],numOfClass[i],nameOfClass[i],from[i],to[i]));
         }
