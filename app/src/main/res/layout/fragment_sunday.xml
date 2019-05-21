@@ -20,6 +20,7 @@
             android:background="@color/azra2_new">
 
             <android.support.v7.widget.RecyclerView
+                android:id="@+id/RCV_sun"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
