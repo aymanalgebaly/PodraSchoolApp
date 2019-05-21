@@ -67,7 +67,7 @@ public class WednesdayFragment extends Fragment {
         int [] classIMg = {R.drawable.teachers,R.drawable.teachers,R.drawable.teachers,R.drawable.teachers,R.drawable.teachers};
         int [] book = {R.drawable.open_book_final,R.drawable.open_book_final,R.drawable.open_book_final,
                 R.drawable.open_book_final,R.drawable.open_book_final};
-        
+
         for (int i = 0; i <numOfClass.length ; i++) {
             scheduleModels.add(new ScheduleModel(classIMg[i],book[i],numOfClass[i],nameOfClass[i],from[i],to[i]));
         }
