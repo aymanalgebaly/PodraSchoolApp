@@ -61,11 +61,19 @@ public class InboxFragment extends Fragment {
     private void fetchData (){
         List<InboxModel> inboxModels = new ArrayList<>();
 
-        String [] title = {"Message 1","Message 2","Message 3","Message 4","Message 5"};
-        String [] body = {"Welcome","Welcome","Welcome","Welcome","Welcome"};
+        String [] title = {"اداره المدرسة","اداره المدرسة","اداره المدرسة","اداره المدرسة","اداره المدرسة"};
+        String [] body = {"اداره المدرسه تتشرف بدعوة سيادتكم لحضور حفل تكريم اوائل المدرسه",
+                "اداره المدرسه تتشرف بدعوة سيادتكم لحضور حفل تكريم اوائل المدرسه"
+                ,"اداره المدرسه تتشرف بدعوة سيادتكم لحضور حفل تكريم اوائل المدرسه",
+                "اداره المدرسه تتشرف بدعوة سيادتكم لحضور حفل تكريم اوائل المدرسه",
+                "اداره المدرسه تتشرف بدعوة سيادتكم لحضور حفل تكريم اوائل المدرسه"};
+        String [] date = {"21/10/2010","21/10/2010","21/10/2010","21/10/2010","21/10/2010"};
+
+        int [] delete_img = {R.drawable.ic_delete_red_24dp,R.drawable.ic_delete_red_24dp
+        ,R.drawable.ic_delete_red_24dp,R.drawable.ic_delete_red_24dp,R.drawable.ic_delete_red_24dp};
 
         for (int i = 0; i <title.length ; i++) {
-            inboxModels.add(new InboxModel(title[i],body[i]));
+            inboxModels.add(new InboxModel(title[i],body[i],date[i],delete_img[i]));
         }
         adapter.setData(inboxModels);
         adapter.notifyDataSetChanged();

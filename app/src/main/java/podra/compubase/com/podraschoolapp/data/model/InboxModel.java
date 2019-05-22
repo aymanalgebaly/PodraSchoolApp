@@ -2,14 +2,33 @@ package podra.compubase.com.podraschoolapp.data.model;
 
 public class InboxModel {
 
-    private String title,body;
+    private String title,body,date;
+    private int delete_img;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public int getDelete_img() {
+        return delete_img;
+    }
+
+    public void setDelete_img(int delete_img) {
+        this.delete_img = delete_img;
+    }
 
     public InboxModel() {
     }
 
-    public InboxModel(String title, String body) {
+    public InboxModel(String title, String body, String date, int delete_img) {
         this.title = title;
         this.body = body;
+        this.date = date;
+        this.delete_img = delete_img;
     }
 
     public String getTitle() {

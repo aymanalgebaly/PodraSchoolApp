@@ -6,7 +6,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -35,6 +38,10 @@ public class InboxAdapter extends RecyclerView.Adapter<InboxAdapter.ViewHolderIn
 
         viewHolderInbox.title.setText(inboxModel.getTitle());
         viewHolderInbox.body.setText(inboxModel.getBody());
+        viewHolderInbox.date.setText(inboxModel.getDate());
+
+        Picasso.get().load(inboxModel.getDelete_img()).into(viewHolderInbox.delete_img);
+
     }
 
     @Override
@@ -49,12 +56,16 @@ public class InboxAdapter extends RecyclerView.Adapter<InboxAdapter.ViewHolderIn
 
     public class ViewHolderInbox extends RecyclerView.ViewHolder {
 
-        TextView title,body;
+        TextView title,body,date;
+        ImageView delete_img;
         public ViewHolderInbox(@NonNull View itemView) {
             super(itemView);
 
             title = itemView.findViewById(R.id.inbox_txt);
             body = itemView.findViewById(R.id.inbox_body);
+            date = itemView.findViewById(R.id.date_txt);
+
+            delete_img = itemView.findViewById(R.id.delete_img_inbox);
         }
     }
 }

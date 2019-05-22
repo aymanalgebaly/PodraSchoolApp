@@ -61,11 +61,16 @@ public class NotificationsFragment extends Fragment {
     private void fetchData (){
         List<NotificationModel> notificationModels = new ArrayList<>();
 
-        String [] title = {"Not 1","Not 2","Not 3","Not 4","Not 5"};
-        String [] body = {"Welcome","Welcome","Welcome","Welcome","Welcome"};
+        String [] title = {"تنويه هام","تنويه هام","تنويه هام","تنويه هام","تنويه هام"};
+        String [] body = {"سوف يتم انعقاد اجتماع مجلس الاباء غدا الساعة","سوف يتم انعقاد اجتماع مجلس الاباء غدا الساعة",
+                "سوف يتم انعقاد اجتماع مجلس الاباء غدا الساعة","سوف يتم انعقاد اجتماع مجلس الاباء غدا الساعة",
+                "سوف يتم انعقاد اجتماع مجلس الاباء غدا الساعة"};
+
+        int [] noti_img = {R.drawable.ic_notifications_red_24dp,R.drawable.ic_notifications_red_24dp,R.drawable.ic_notifications_red_24dp
+        ,R.drawable.ic_notifications_red_24dp,R.drawable.ic_notifications_red_24dp};
 
         for (int i = 0; i <title.length ; i++) {
-            notificationModels.add(new NotificationModel(title[i],body[i]));
+            notificationModels.add(new NotificationModel(title[i],body[i],noti_img[i]));
         }
         adapter.setData(notificationModels);
         adapter.notifyDataSetChanged();

@@ -6,7 +6,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -35,6 +38,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
         viewHolderNotification.title.setText(notificationModel.getTitle());
         viewHolderNotification.body.setText(notificationModel.getBody());
+
+        Picasso.get().load(notificationModel.getNoti_img()).into(viewHolderNotification.noti_img);
     }
 
     @Override
@@ -49,11 +54,14 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public class ViewHolderNotification extends RecyclerView.ViewHolder {
 
         TextView title,body;
+        ImageView noti_img;
         public ViewHolderNotification(@NonNull View itemView) {
             super(itemView);
 
             title = itemView.findViewById(R.id.noti_txt);
             body = itemView.findViewById(R.id.noti_body);
+
+            noti_img = itemView.findViewById(R.id.noti_img);
         }
     }
 }
