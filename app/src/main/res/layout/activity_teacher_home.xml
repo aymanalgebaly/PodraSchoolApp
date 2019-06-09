@@ -2,13 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/container_teacher"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.HomeActivity">
+    tools:context=".ui.activities.TeacherHomeActivity">
 
     <FrameLayout
-        android:id="@+id/frame"
+        android:id="@+id/frame_teacher"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/RV_B_navigation">
@@ -16,17 +16,17 @@
     </FrameLayout>
 
     <RelativeLayout
-        android:id="@+id/RV_B_navigation"
+        android:id="@+id/RV_B_navigation_teacher"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true">
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        app:menu="@menu/navigation_parent" />
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:menu="@menu/navigation" />
 
     </RelativeLayout>
 

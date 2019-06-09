@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:background="@color/azra2_new"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.TeacherHomeFragment"
+    android:baselineAligned="false">
+
+    <!-- TODO: Update blank fragment layout -->
+
+   <RelativeLayout
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/openbook_background_img_teacher"
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           android:background="@drawable/circle"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true">
+
+       </de.hdodenhof.circleimageview.CircleImageView>
+
+       <ImageView
+           android:id="@+id/openbook_img_teacher"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+           android:backgroundTint="@color/off_white"
+           android:background="@drawable/study"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/home_work"
+           android:textColor="@color/white"
+           android:textStyle="bold"
+           android:textSize="16sp"
+           android:layout_below="@id/openbook_img_teacher"
+           android:layout_marginTop="5dp"
+           android:gravity="center_horizontal"/>
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/schedule_teacher"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/circle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:id="@+id/schedule_teacher_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/soft_blue"
+            android:background="@drawable/calendar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@id/schedule_teacher_img"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+</LinearLayout>

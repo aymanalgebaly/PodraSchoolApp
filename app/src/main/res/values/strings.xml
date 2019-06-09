@@ -36,4 +36,14 @@
     <string name="bus">Bus</string>
     <string name="message">Message</string>
     <string name="date">Date</string>
+    <string name="teacher">Teacher</string>
+    <string name="parent">Parent</string>
+    <string name="title_activity_teacher_home">TeacherHomeActivity</string>
+    <string name="send">Send</string>
+    <string name="title_of_lesson">Title of lesson</string>
+    <string name="objectives">Objectives</string>
+    <string name="the_homework">The homework</string>
+    <string name="number_of_bookshelves">Number of bookshelves</string>
+    <string name="rack">Rack</string>
+    <string name="name_of_book">Name of book</string>
 </resources>

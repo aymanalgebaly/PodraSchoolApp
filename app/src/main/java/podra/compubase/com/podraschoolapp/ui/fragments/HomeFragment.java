@@ -44,7 +44,7 @@ public class HomeFragment extends Fragment {
 //    ImageView placeholderImg;
 //    Unbinder unbinder;
 
-    private ImageView openbook,education,location,checklist,calendar;
+    private ImageView openbook,education,location,checklist,calendar,library;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -106,6 +106,16 @@ public class HomeFragment extends Fragment {
                 homeActivity3.displaySelectedFragment(calendarFragment);
             }
         });
+
+        library = view.findViewById(R.id.library_img);
+        library.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HomeActivity homeActivity4 = (HomeActivity) getActivity();
+                LibraryFragment libraryFragment = new LibraryFragment();
+                homeActivity4.displaySelectedFragment(libraryFragment);
+            }
+        });
 //        unbinder = ButterKnife.bind(this, view);
         return view;
     }
@@ -116,4 +126,10 @@ public class HomeFragment extends Fragment {
 //        unbinder.unbind();
 //    }
 
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+
     }
+}
